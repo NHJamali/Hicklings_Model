@@ -3,7 +3,7 @@ Paw=zeros(1,length(t));
 Pa=0;
 C0=5;
 R=3;
-K=0.00001;
+K=0.00009;
 
 for i=0:length(t)-1
     if t(1,i+1)<=1
@@ -11,7 +11,7 @@ for i=0:length(t)-1
     else
         dV=0;
     end
-    dPa=(dV/C0)*exp(-K*Pa);
+    dPa=(dV/C0)*exp(K*Pa);
     Pa=Pa+dPa;
     Paw(i+1)=R*dV+Pa;
 end
