@@ -1,8 +1,16 @@
-function dy=FOM(t,C,dV)
+function dy=FOM(t,y,param)
 
-dPa=y(1);
-dV=y(2);
+C=param(1);
+R=param(2);
 
-dy=[y(1)/C;
-    R*y(2)+y(1)];
+dV=y(1);
+dPa=y(2);
+
+
+dy=zeros(3,1);
+
+dy(1)=dV;
+dy(2)=dPa/C;
+dy(3)=R*dV+dPa;
+
 end
