@@ -24,6 +24,4 @@ hold on
 C_skm=C_SKM(P,0.371,0.1018);
 plot(P,C_skm)
 grid on
-
-%Pa=dV/C_skm;
-%Paw=R*dV+Pa;
+plot(P(2:end),diff(V),"Marker","o")
