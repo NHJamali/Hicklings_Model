@@ -20,4 +20,7 @@ pressure(end+1)=PRESS;
 end
 %display(volume);
 %display(pressure);
+figure
 plot(pressure, volume)
+grid on
+hold on
