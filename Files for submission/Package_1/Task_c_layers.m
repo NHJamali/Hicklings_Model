@@ -14,6 +14,6 @@ end
 
 
 title('Hickling Model , Different Number of Layers TOP=0')
-
+legend("layers=4","layers=10","layers=20","layers=30")
 xlabel("Pressure")
 ylabel("Volume")
